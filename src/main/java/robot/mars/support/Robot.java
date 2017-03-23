@@ -3,6 +3,8 @@ package robot.mars.support;
 import java.util.List;
 import java.awt.Point;
 
+import robot.mars.support.TurnRobot;
+
 public class Robot {
   private static int positionX;
   private static int positionY;
@@ -22,6 +24,14 @@ public class Robot {
       case 'W': return this.moveWest();
       default: return this.getPointRobot();
     }
+  }
+
+  public void left() {
+    this.direction = new TurnRobot().turnLeft(this.direction);
+  }
+
+  public void right() {
+    this.direction = new TurnRobot().turnRight(this.direction);
   }
 
   private Point getPointRobot() {

@@ -36,4 +36,20 @@ public class RobotTest {
 
     assertEquals("X axis must be zero", "(0, 1, W)", robot.toString());
   }
+
+  @Test
+  public void testLeft() {
+    Robot robot = new Robot(0, 0, 'N');
+    robot.left();
+
+    assertEquals("direction must be West", "(0, 0, W)", robot.toString());
+  }
+
+  @Test
+  public void testRight() {
+    Robot robot = new Robot(0, 0, 'N');
+    robot.right();
+
+    assertEquals("direction must be East", "(0, 0, E)", robot.toString());
+  }
 }
