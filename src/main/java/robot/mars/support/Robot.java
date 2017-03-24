@@ -4,16 +4,19 @@ import java.util.List;
 import java.awt.Point;
 
 import robot.mars.support.TurnRobot;
+import robot.mars.support.MarsMap;
 
 public class Robot {
   private static int positionX;
   private static int positionY;
   private static Character direction;
+  private static MarsMap marsMap;
 
-  public Robot(int positionX, int positionY, Character direction) {
+  public Robot(int positionX, int positionY, Character direction, MarsMap marsMap) {
     this.positionX = positionX;
     this.positionY = positionY;
     this.direction = direction;
+    this.marsMap = marsMap;
   }
 
   public Point move() {

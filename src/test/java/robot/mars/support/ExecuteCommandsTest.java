@@ -5,13 +5,15 @@ import java.util.List;
 
 import robot.mars.support.RobotErrorExecutingException;
 import robot.mars.support.ExecuteCommands;
+import robot.mars.support.MarsMap;
 import robot.mars.support.Robot;
 
 public class ExecuteCommandsTest {
 
   @Test
   public void testIterateCommands() {
-    Robot robot = new Robot(0, 0, 'N');
+    MarsMap marsMap = new MarsMap(5, 5);
+    Robot robot = new Robot(0, 0, 'N', marsMap);
     List<Character> commands = Arrays.asList('M', 'M', 'M');
 
     List<String> actual = new ExecuteCommands().iterateCommands(commands, robot);
@@ -22,7 +24,8 @@ public class ExecuteCommandsTest {
 
   @Test(expected = RobotErrorExecutingException.class)
   public void testIterateCommandsWithInvalidCommands() {
-    Robot robot = new Robot(0, 0, 'N');
+    MarsMap marsMap = new MarsMap(5, 5);
+    Robot robot = new Robot(0, 0, 'N', marsMap);
     List<Character> commands = Arrays.asList('F', 'O');
 
     new ExecuteCommands().iterateCommands(commands, robot);
