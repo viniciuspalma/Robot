@@ -1,6 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import robot.mars.support.RobotOutMapException;
 import robot.mars.support.MarsMap;
 import robot.mars.support.Robot;
 
@@ -58,5 +59,13 @@ public class RobotTest {
     robot.right();
 
     assertEquals("direction must be East", "(0, 0, E)", robot.toString());
+  }
+
+  @Test(expected = RobotOutMapException.class)
+  public void testMoveExitingMap() {
+    MarsMap marsMap = new MarsMap(1, 1);
+    Robot robot = new Robot(0, 0, 'N', marsMap);
+    robot.move();
+    robot.move();
   }
 }

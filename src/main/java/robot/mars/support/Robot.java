@@ -3,6 +3,7 @@ package robot.mars.support;
 import java.util.List;
 import java.awt.Point;
 
+import robot.mars.support.RobotOutMapException;
 import robot.mars.support.TurnRobot;
 import robot.mars.support.MarsMap;
 
@@ -38,6 +39,10 @@ public class Robot {
   }
 
   private Point getPointRobot() {
+    if (!this.marsMap.inMap(this.positionX, this.positionY)) {
+      throw new RobotOutMapException();
+    }
+
     return new Point(this.positionX, this.positionY);
   }
 
