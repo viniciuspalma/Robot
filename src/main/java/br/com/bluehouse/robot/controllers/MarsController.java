@@ -1,4 +1,4 @@
-package robot.mars.support;
+package br.com.bluehouse.robot.controllers;
 
 import java.util.List;
 
@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
-import robot.mars.support.Robot;
-import robot.mars.support.CommandsParser;
-import robot.mars.support.ExecuteCommands;
-import robot.mars.support.Robot;
-import robot.mars.support.MarsMap;
+import br.com.bluehouse.robot.models.Robot;
+import br.com.bluehouse.robot.models.MarsMap;
+import br.com.bluehouse.robot.services.CommandsParser;
+import br.com.bluehouse.robot.services.ExecuteCommands;
 
 @RestController
 @RequestMapping("/rest/mars")

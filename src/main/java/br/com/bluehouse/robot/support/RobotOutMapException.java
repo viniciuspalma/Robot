@@ -1,4 +1,4 @@
-package robot.mars.support;
+package br.com.bluehouse.robot.support;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 

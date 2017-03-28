@@ -1,7 +1,7 @@
+package br.com.bluehouse.robot.models;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-import robot.mars.support.MarsMap;
 
 public class MarsMapTest {
 

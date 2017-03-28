@@ -1,4 +1,4 @@
-package robot.mars.support;
+package br.com.bluehouse.robot.models;
 
 public class MarsMap {
   private static int verticalSize = 0;

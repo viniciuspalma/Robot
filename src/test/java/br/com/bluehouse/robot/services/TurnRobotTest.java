@@ -1,7 +1,7 @@
+package br.com.bluehouse.robot.services;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-import robot.mars.support.TurnRobot;
 
 public class TurnRobotTest {
 

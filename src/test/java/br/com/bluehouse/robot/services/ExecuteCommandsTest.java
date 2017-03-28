@@ -1,12 +1,13 @@
+package br.com.bluehouse.robot.services;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.List;
 
-import robot.mars.support.RobotErrorExecutingException;
-import robot.mars.support.ExecuteCommands;
-import robot.mars.support.MarsMap;
-import robot.mars.support.Robot;
+import br.com.bluehouse.robot.support.RobotErrorExecutingException;
+import br.com.bluehouse.robot.models.MarsMap;
+import br.com.bluehouse.robot.models.Robot;
 
 public class ExecuteCommandsTest {
 

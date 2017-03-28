@@ -1,9 +1,9 @@
+package br.com.bluehouse.robot.models;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import robot.mars.support.RobotOutMapException;
-import robot.mars.support.MarsMap;
-import robot.mars.support.Robot;
+import br.com.bluehouse.robot.support.RobotOutMapException;
 
 public class RobotTest {
 

@@ -1,9 +1,10 @@
-package robot.mars.support;
+package br.com.bluehouse.robot.services;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import robot.mars.support.RobotErrorExecutingException;
+import br.com.bluehouse.robot.models.Robot;
+import br.com.bluehouse.robot.support.RobotErrorExecutingException;
 
 public class ExecuteCommands {
 

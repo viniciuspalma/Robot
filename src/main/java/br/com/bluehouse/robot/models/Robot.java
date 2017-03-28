@@ -1,11 +1,10 @@
-package robot.mars.support;
+package br.com.bluehouse.robot.models;
 
 import java.util.List;
 import java.awt.Point;
 
-import robot.mars.support.RobotOutMapException;
-import robot.mars.support.TurnRobot;
-import robot.mars.support.MarsMap;
+import br.com.bluehouse.robot.support.RobotOutMapException;
+import br.com.bluehouse.robot.services.TurnRobot;
 
 public class Robot {
   private static int positionX;
